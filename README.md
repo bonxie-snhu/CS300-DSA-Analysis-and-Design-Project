@@ -8,26 +8,26 @@ Project One and Two for this class including a reflection on the project.
   to ensure that this program was designed thoughtfully in order to be efficient and be able to handle any 
   real-world situations. For example if there were missing prerequisites, inconsistent input from the user, and 
   malformed input lines.
-<br><br>
+<br><br><br>
 
 <b>How did you approach the problem? Consider why data structures are important to understand.</b><br>
   Starting in Project One, I first designed pseudocode. The pseudocode was for three different data structures
   that were being considered for the program: vector, hash table, and binary search tree. I then peformed Big O 
   analysis on each to see which would be the best data structure for handling the data. 
-<br>
+<br><br>
   Vector sort used used used bubble sort in order to sort the course list which operates at O(n^2). Hash table was 
   O(1) average lookup but then all the courses needed to be pulled into a temporary vector to sort all the courses 
   each time the list was printed. Then the BST inserted courses at O(log n) average and produced the ordered list 
   using in-order traversal at O(n) and there was no separate step needed to sort the courses in alphanumeric order. 
   This analysis is what helped me choose the best data structure to use in which I chose the BST for the program's
   implementation in Project Two.
-<br>
+<br><br>
   The process of looking at the different data structures and using Big O analysis helped give me an understanding
   of why data structures matter in a program beyond just theory. All three data structures are able to store and
   return all the same data, but the data structures have their pros and cons which were easier to see by looking
   at pseudocode for the structures. It's important to choose the data structure that will efficiently handle what 
   the program needs to do most often.
-<br><br>
+<br><br><br>
 
 <b>How did you overcome any roadblocks you encountered while going through the activities or project?</b><br>
   One challenge or roadblock I faced actually came directly from feedback I received from my Project Once psuedocode.
@@ -36,13 +36,13 @@ Project One and Two for this class including a reflection on the project.
   clearer normalization of course IDs. This was useful feedback that served as a reminder to think about user
   input to be able to not only catch obvious errors but to be able to provide a response regardless of how a user
   inputs rather than unexpected behavior.
-<br>
+<br><br>
   I ended up addressing this in Project Two. Instead of using /cin>>choice/, I switched to reading the full input 
   line as a string with /getline/. Then I used /isdigit()/ to chck every character before using /stoi()/ to convert. 
   I then built /NormalizeCourseID()/ function for course ID normalization to trim whitespace and conver to uppercase.
   Therefore the program would be able to locate the correct course regardless of if the input is lowercase or
   uppercase. 
-<br><br>
+<br><br><br>
 
 <b>How has your work on this project expanded your approach to designing software and developing programs?</b><br>
   Before this course, I didn't like to write pseudocode. I wanted to dive into coding and figure out as I go. Working
@@ -53,7 +53,7 @@ Project One and Two for this class including a reflection on the project.
   and writing the pseudocode isn't a waste of time and is actually important to the process. It helps with efficient
   coding as I didn't have to make any changes with the code itself, just with the design and then easily lay it out 
   in code.
-<br><br>
+<br><br><br>
 
 <b>How has your work on this project evolved the way you write programs that are maintainable, readable, and adaptable?</b><br>
   This project has taught me to be intentional about all of these qualities. In regards to reability, I made an effort 
